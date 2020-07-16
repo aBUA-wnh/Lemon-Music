@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/sign in.css">
+		<script type="text/javascript" src="js/sign in.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="head">
+			<div id="menu">
+				<!--主导航栏-->
+				<div id="menu_up">
+					<div id="menu_up_l">
+						<a href="index.html"><img src="images/index/menu/logo.png"  class="logo" /></a>
+					</div>
+					<div id="menu_up_c">
+						<ul>
+							<li><a href="index.html">音乐馆</a></li>
+							<li><a href="sign in.html" style="background-color: #31c27c;color: #ffffff;">我的音乐</a></li>
+							<li><a href="gufeng.html">古风之韵</a></li>
+							<li><a href="#">客户端</a></li>
+							<li><a href="#">VIP</a></li>
+						</ul>
+					</div>
+					<div id="menu_up_r">
+						<input typr="text" placeholder="搜索音乐、MV、歌单、用户" class="search" />
+						<a href=""><img src="images/index/menu/icon.png"  class="search_icon" /></a>
+						<a href="#" class="menu_up_r_a1" onclick = "openDialog()">登录</a>
+						<a href="#" class="menu_up_r_a2">开通VIP</a>
+					</div>
+				</div>
+				<!--主导航栏 end-->
+			</div>
+		</div>
+		<!--头部 end-->
+
+		<!--内容-->
+		<div id="body">
+			<div id="body_content">
+				<div class="content_t">私人音乐空间，听我想听的歌</div>
+				<div class="content_c">登录管理我的音乐，多终端同步</div>
+				<a href="#" class="content_b" onclick = "openDialog()">立即登录</a>
+				<!-- 登录界面 -->
+				<div id="sign" class="sign">
+					<div class="sign_t">
+						<a href="#" class="sign_t_in" onclick = "switch1()">QQ登录</a>
+						<a href="#" class="sign_t_in" onclick = "switch2()">微信登录</a>
+					</div>
+					<a href="#" class="a_close" onclick = "closeDialog()">
+						<i class="close1"></i>
+						<i class="close2"></i>
+					</a>
+					<!-- QQ登录 -->
+					<div class="sign_c1" id="sign_c1">
+						<!-- 快捷登录 -->
+						<div class="sign_c1_l" id="sign_c1_l">
+							<div class="sign_c1_l_t">
+								<div class="sign_c1_l_t1">快速安全登录</div>
+								<div class="sign_c1_l_t2">
+									<p>请使用<a href="http://im.qq.com/mobileqq/#from=login">QQ手机版</a>扫描二维码，</p>
+									<p>或点击头像授权登录。</p>
+								</div>
+							</div>
+							<div class="sign_c1_l_c">
+								<div class="c1_l_c_d">
+									<div class="sign_img_d"><img src="images/sign in/IMG_0318.jpg" class="sign_img1" /></div>
+									<div class="sign_img_d">
+										<a href="My Music.html"><img src="images/sign in/IMG_8322.JPG" class="sign_img2" /></a>
+										<span class="sign_s"><a href="">小星星</a></span>
+									</div>
+								</div>
+							</div>
+							<div class="sign_c1_l_b">
+								<span class="sign_a_d">
+									<a href="#" class="sign_a" onclick = "zhsignin()">账号密码登录</a><span class="sign_a_span">|</span>
+									<a href="#" class="sign_a">注册新账号</a><span class="sign_a_span">|</span>
+									<a href="#" class="sign_a">意见反馈</a>
+								</span>
+							</div>
+						</div>
+						<!-- 账号登录 -->
+						<div class="zhsign" id="zhsign">
+							<div class="zhsign1">
+								<div class="zhsign1_text1">账号密码登录</div>
+								<div class="zhsign1_text2">推荐使用<a href="#" onclick = "kssignin()">快速安全登录</a>，防止盗号。</div>
+							</div>
+							<div class="zhsign2">
+								<div class="zhsign2_d">
+									<input type="text" placeholder="支持QQ号/邮箱/手机号登录" class="zhsign2_input">
+									<input type="password" placeholder="密码" class="zhsign2_input">
+									<a href="My Music.html">授权并登录</a>
+								</div>
+							</div>
+							<div class="zhsign3">
+								<span class="zhsign3_span">
+									<a href="#" class="zhsign3_spana">忘了密码？</a><span class="zhsign3_span_as">|</span>
+									<a href="#" class="zhsign3_spana">注册新账号</a><span class="zhsign3_span_as">|</span>
+									<a href="#" class="zhsign3_spana">意见反馈</a>
+								</span>
+							</div>
+						</div>
+						<div class="sign_c1_r">
+							<ul>
+								<li><a href="">柠檬音乐</a>&nbsp;将获得以下权限：</li>
+								<li><input type="checkbox" checked="checked" />&nbsp;&nbsp;&nbsp;全选</li>
+								<li><input type="checkbox" checked="checked" disabled="false" />&nbsp;&nbsp;&nbsp;获得您的昵称、头像、性别</li>
+							</ul>
+							<span class="sign_c1_r_span">授权后表明你已同意&nbsp;<a href="">QQ登录服务协议</a></span>
+						</div>
+					</div>
+					<!-- 微信登录 -->
+					<div class="sign_c2" id="sign_c2">
+						<div class="sign_c2_img">
+							<img src="images/sign in/IMG_0319.jpg" class="c2_img" />
+						</div>
+						<div class="sign_c2_span">
+							<span>
+								<p class="c2_span_p1">请使用微信扫描二维码登录</p>
+								<p class="c2_span_p2">“柠檬音乐”</p>
+								<p class="c2_span_p2">QQ与微信账号的音乐资产、付费特权不互通</p>
+							</span>
+						</div>
+					</div>
+					<div class="sign_b">
+						<a href="">下载客户端&nbsp;体验更多内容</a>
+					</div>
+				</div>
+				<!-- 登录界面 end -->
+			</div>
+		</div>
+		<!--内容 end-->
+
+		<!--尾部-->
+		<div id="footer">
+			<div id="footer_d">
+				<div class="footer_copyright">
+					<p>
+						<a href="">关于柠檬 </a>
+						<span>|</span>
+						<a href="">About Lemon </a>
+						<span>|</span>
+						<a href="">服务条款 </a>
+						<span>|</span>
+						<a href="">用户服务协议 </a>
+						<span>|</span>
+						<a href="">隐私政策 </a>
+						<span>|</span>
+						<a href="">权利声明 </a>
+						<span>|</span>
+						<a href="">广告服务 </a>
+						<span>|</span>
+						<a href="">柠檬招聘 </a>
+						<span>|</span>
+						<a href="">客服中心 </a>
+						<span>|</span>
+						<a href="">网站导航</a>
+					</p>
+					<p>
+						Copyright © 1998 - 2019 Lemon
+						<a href="">All Rights Reserved.</a>
+					</p>
+					<p>
+						柠檬公司
+						<a href="">版权所有</a>
+						<a href="">柠檬网络文化经营许可证</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--尾部 end-->
+	</body>
+</html>
