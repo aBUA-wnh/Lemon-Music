@@ -1,0 +1,622 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+    color: #000;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color:#51b7ec;
+}
+
+/*头部*/
+#head{
+	width:1910px;
+	height:90px;
+}
+
+#menu{
+	width:1200px;
+	height:90px;
+	margin:0 auto;
+}
+
+/*主导航栏*/
+#menu_up{
+	width:1200px;
+	height:90px;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+#menu_up_l{
+	width:195px;
+	height:90px;
+	float:left;
+}
+
+.logo{
+	margin-top:17px;
+}
+
+#menu_up_c{
+	width:565px;
+	height:90px;
+	float:left;
+}
+
+#menu_up_c li{
+	float:left;
+    line-height: 110px;
+    height: 90px;
+    text-align: center;
+    font-size: 18px;
+	margin-left: 8px;
+}
+
+#menu_up_c a{
+	display:block;
+	width:105px;
+	height:90px;
+	background-color:#fff;
+	text-decoration: none;
+	color:#000;
+}
+
+#menu_up_c a:hover{
+	color:#31c27c;
+}
+
+#menu_up_r{
+	width:440px;
+	height:90px;
+	float:left;
+}
+
+.search{
+	border: 1px solid #c9c9c9;
+    padding: 0 33px 0 11px;
+    line-height: 36px;
+    width:180px;
+    height: 36px;
+    margin-top: 36px;
+    color:#757575;
+    font-size: 14px;
+    position: relative;
+    left:25px;
+    border-radius: 3px;
+    background-color: #fff;
+    float:left;
+    outline:none;
+}
+
+.search_icon{
+	float:left;
+	position: relative;
+	top:44px;
+	left:-7px;
+}
+
+.menu_up_r_a1{
+    display: block;
+    width: 60px;
+    height: 38px;
+    float: left;
+    text-decoration: none;
+    border-radius: 3px;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    position: relative;
+    top: 36px;
+    left: 15px;
+}
+
+.menu_up_r_a1:hover{
+	color:#31c27c;
+}
+
+.menu_up_r_a2{
+    display: block;
+    width: 110px;
+    height: 36px;
+    background-color: #31c27c;
+    border-radius: 3px;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    position: relative;
+    top: 36px;
+    left: 20px;
+}
+
+.menu_up_r_a2:hover{
+	background-color: #2daf6d;
+}
+/*头部 end*/
+
+/*内容*/
+#body{
+	width:1910px;
+	height:900px;
+	background-image: url("../images/sign in/wallhaven-5dgv69.jpg");
+	background-position: center;
+}
+
+#body_content{
+	width:1200px;
+	height:210px;
+	margin:0 auto;
+	position: relative;
+	top: 300px;
+}
+
+.content_t{
+	width: 735px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 55px;
+    font-weight: lighter;
+    line-height: 55px;
+    animation: Appear 1s cubic-bezier(0.52,0.01,0.16,1);
+}
+
+.content_c{
+    width: 345px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    line-height: 30px;
+	margin-top: 40px;
+    margin-bottom: 30px;
+    animation: Appear 1.3s cubic-bezier(0.52,0.01,0.16,1);
+}
+
+.content_b{
+	display:block;
+	width:130px;
+	height:48px;
+	margin:0 auto;
+	color:#fff;
+	font-size: 20px;
+	text-align:center;
+	line-height: 48px;
+	border:1px solid #31c27c;
+	background-color:#31c27c;
+	border-radius:3px;
+	animation: Appear 1.5s cubic-bezier(0.52,0.01,0.16,1);
+}
+
+@keyframes Appear {
+	from{
+		opacity: 0;
+		transform: translateY(60px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+/*登录界面*/
+.sign{
+	overflow: hidden;
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:700px;
+	height:490px;
+	background-color:#fff;
+	border-radius:2px;
+	margin:auto;
+	z-index:1002;
+}
+
+.sign_t{
+	width:700px;
+	height:56px;
+	text-align:center;
+	line-height: 55px;
+	border-bottom:1px solid #f2f2f2;
+}
+
+.sign_t_in{
+    color: #000;
+    margin: 0 55px;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.sign_t_in:hover{
+	color:#31c27c;
+}
+
+/*QQ登录*/
+.sign_c1{
+	width:700px;
+	height:348px;
+	margin-top: 5px;
+	display: block;
+}
+
+/*快捷登录*/
+.sign_c1_l{
+	width:430px;
+	height:340px;
+	float:left;
+	display: block;
+}
+
+.sign_c1_l_t{
+	width:430px;
+	height:130px;
+}
+
+.sign_c1_l_t1{
+	text-align:center;
+	font-size: 20px;
+	padding-top: 15px;
+    margin-bottom: 16px;
+}
+
+.sign_c1_l_t2{
+	text-align:center;
+	font-size:16px;
+	color:#666;
+}
+
+.sign_c1_l_t2 a:hover{
+	text-decoration: underline;
+}
+
+.sign_c1_l_c{
+	width:430px;
+	height:120px;
+}
+
+.c1_l_c_d{
+	width:200px;
+	height:120px;
+	margin:0 auto;
+}
+
+.sign_img_d{
+	width: 83px;
+    height: 83px;
+    float: left;
+    margin-top: 17px;
+    margin-left: 10px;
+    border:1px solid #d3d3d3;
+}
+
+.sign_img1{
+    width: 80px;
+    height: 79px;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.sign_img2{
+    width: 79px;
+    height: 79px;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+
+.sign_s{
+	font-size: 12px;
+	position: relative;
+	left: 23px;
+}
+
+.sign_s a{
+	color:#666;
+}
+
+.sign_img2:hover{
+	box-shadow: 
+	-2px 2px 2px #a8d0f5,
+	2px -2px 2px #a8d0f5,
+	2px 2px 2px #a8d0f5,
+	2px 2px 2px #a8d0f5;
+}
+
+.sign_c1_l_b{
+	width:430px;
+	height:98px;
+}
+
+.sign_a_d{
+    position: relative;
+    top: 60px;
+    left: 200px;
+}
+
+.sign_a{
+	font-size: 12px;
+	color:#666;
+}
+
+.sign_a:hover{
+	text-decoration: underline;
+}
+
+.sign_a_span{
+	margin: 0 0 0 4px;
+	font-size: 12px;
+	color:#bfbfbf;
+}
+
+/*账号登录*/
+.zhsign{
+	width:430px;
+	height:340px;
+	float:left;
+	display: none;
+}
+
+.zhsign1{
+	width:430px;
+	height:97px;
+}
+
+.zhsign1_text1{
+	text-align:center;
+	font-size: 20px;
+	padding-top: 15px;
+    margin-bottom: 16px;
+}
+
+.zhsign1_text2{
+	text-align:center;
+	font-size:16px;
+	color:#666;
+}
+
+.zhsign1_text2 a:hover{
+	text-decoration: underline;
+}
+
+.zhsign2{
+	width:430px;
+	height:165px;
+}
+
+.zhsign2_d{
+	width:270px;
+	height:172px;
+	margin:0 auto;
+}
+
+.zhsign2_input{
+    width: 268px;
+    height: 40px;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.zhsign2_d a{
+	display: block;
+    width: 270px;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #31c27c;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.zhsign3{
+	width:430px;
+	height:78px;
+}
+
+.zhsign3_span{
+    position: relative;
+    top: 40px;
+    left: 200px;
+}
+
+.zhsign3_spana{
+	font-size: 12px;
+	color:#666;
+}
+
+.zhsign3_spana:hover{
+	text-decoration: underline;
+}
+
+.zhsign3_span_as{
+	margin: 0 0 0 4px;
+	font-size: 12px;
+	color:#bfbfbf;
+}
+
+/*右边部分*/
+.sign_c1_r{
+	width:269px;
+	height:340px;
+	float:left;
+	border-left: 1px dotted #e3e3e3;
+}
+
+.sign_c1_r li{
+    width: 227px;
+    height: 40px;
+	border-top: 1px dotted #e3e3e3;
+	position: relative;
+    top: 20px;
+    left: 30px;
+    font-size: 12px;
+    color:#666;
+    line-height: 40px;
+}
+
+.sign_c1_r a:hover{
+	text-decoration: underline;
+}
+
+.sign_c1_r input{
+	position: relative;
+	top: 2px;
+}
+
+.sign_c1_r_span{
+	font-size: 12px;
+    color: #666;
+    position: relative;
+    top: 45px;
+    left: 30px;
+}
+
+/*微信登录*/
+.sign_c2{
+	width:700px;
+	height:348px;
+	margin-top: 5px;
+	display: none;
+}
+
+.sign_c2_img{
+	width:700px;
+	height:218px;
+	text-align:center;
+}
+
+.c2_img{
+    width: 160px;
+    margin-top: 50px;
+}
+
+.sign_c2_span{
+	width:700px;
+	height:130px;
+	text-align:center;
+}
+
+.sign_c2_span span{
+    position: relative;
+    top: 10px;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.c2_span_p1{
+	color:#373737;
+}
+
+.c2_span_p2{
+	color:#999;
+}
+
+.sign_b{
+	width:700px;
+	height:40px;
+	text-align:center;
+	margin-top: 15px;
+}
+
+.sign_b a{
+	display: inline-block;
+    padding: 0 30px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #31c27c;
+    background-image: linear-gradient(to right,#24ccaa,#31c27c);
+}
+
+.a_close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+}
+
+.a_close:hover .close2{
+	display: block;
+}
+
+.close1{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-position: 0 -200px;
+    background: url("../images/sign in/close1.png");
+}
+
+.close2{
+    display: none;
+    width: 24px;
+    height: 24px;
+    background-position: 0 -200px;
+    background: url("../images/sign in/close2.png");
+    position: absolute;
+    top: 0;
+}
+/*内容 end*/
+
+/*尾部*/
+#footer{
+	width:1910px;
+	height:200px;
+	background-color:#e6eddf;
+}
+
+#footer_d{
+	width:1200px;
+	height:200px;
+	margin:0 auto;
+}
+
+.footer_copyright{
+	width:1200px;
+	height:81px;
+	text-align: center;
+    line-height: 28px;
+    padding: 25px 0;
+}
+
+.footer_copyright p{
+	color:#999;
+	font-size: 14px;
+}
+
+.footer_copyright a{
+	color:#999;
+	font-size: 14px;
+}
+
+.footer_copyright a:hover{
+	color:#31c27c;
+}
+/*尾部 end*/

@@ -1,0 +1,538 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color:#000;
+}
+
+/*头部*/
+#head{
+	width:1910px;
+	height:90px;
+/*    background-color: #e6eddf;*/
+}
+
+#menu{
+	width:1200px;
+	height:90px;
+	margin:0 auto;
+}
+
+/*主导航栏*/
+#menu_up{
+	width:1200px;
+	height:90px;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+#menu_up_l{
+	width:195px;
+	height:90px;
+	float:left;
+}
+
+.logo{
+	margin-top:17px;
+}
+
+#menu_up_c{
+	width:565px;
+	height:90px;
+	float:left;
+}
+
+#menu_up_c li{
+	float:left;
+    line-height: 110px;
+    height: 90px;
+    text-align: center;
+    font-size: 18px;
+	margin-left: 8px;
+}
+
+#menu_up_c a{
+	display:block;
+	width:105px;
+	height:90px;
+	text-decoration: none;
+	color:#000;
+}
+
+#menu_up_c a:hover{
+	color:#31c27c;
+}
+
+#menu_up_r{
+    width:440px;
+    height:90px;
+    float:left;
+}
+
+.search{
+    border: 1px solid #c9c9c9;
+    padding: 0 33px 0 11px;
+    line-height: 36px;
+    width:180px;
+    height: 36px;
+    margin-top: 36px;
+    color:#757575;
+    font-size: 14px;
+    position: relative;
+    left:25px;
+    border-radius: 3px;
+    background-color: #fff;
+    float:left;
+    outline:none;
+}
+
+.search_icon{
+    float:left;
+    position: relative;
+    top:44px;
+    left:-7px;
+}
+
+.menu_up_r_a1{
+    display: block;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    top: 36px;
+    left: 20px;
+}
+
+.menu_up_r_a1_img{
+    width:100%;
+    height:auto;
+}
+
+.menu_up_r_a2{
+    display: block;
+    width: 110px;
+    height: 36px;
+    background-color: #31c27c;
+    border-radius: 3px;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    position: relative;
+    top: 36px;
+    left: 36px;
+}
+
+.menu_up_r_a2:hover{
+    background-color: #2daf6d;
+}
+/*头部 end*/
+
+/*内容*/
+#body{
+    width:1910px;
+    height:1160px;
+    position: relative;
+}
+
+/*头像背景*/
+.body_txbg{
+    width:1910px;
+    height:310px;
+    background:url("../images/My Music/Guardians of Stars1.jpg") no-repeat;
+    background-position: 0 -195px;
+    background-size: cover;
+}
+
+.body_txbg_id{
+    width: 1200px;
+    height: 110px;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+    text-align:center;
+/*    border-bottom: 1px solid #999;*/
+}
+
+.body_txbg_id1{
+    width:1200px;
+    height:60px;
+    font-size: 30px;
+    color:#fff;
+}
+
+.body_txbg_id2{
+    width:205px;
+    height:50px;
+    color:#fff;
+    margin:0 auto;
+}
+
+.body_txbg_id2_li1{
+    height:42px;
+    float:left;
+    padding: 0 25px;
+    border-right: solid 1px #fff;
+    cursor: pointer;
+}
+
+.body_txbg_id2_li1:hover.body_txbg_id2_li1 strong{
+    color:#31c27c;
+}
+
+.body_txbg_id2_li2{
+    height:50px;
+    float:left;
+    padding: 0 25px;
+    cursor: pointer;
+}
+
+.body_txbg_id2_li2:hover.body_txbg_id2_li2 strong{
+    color:#31c27c;
+}
+
+.body_txbg_id2 strong{
+    display: block;
+    font-size: 22px;
+    line-height: 24px;
+    margin-top: -1px;
+    font-weight: 400;
+    color:#fff;
+}
+
+.body_txbg_id2 p{
+    font-size: 14px;
+    color:#fff;
+}
+/*头像*/
+.body_tx{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    top: 65px;
+    left: 0;
+    right: 0;
+    box-shadow: 4px 6px 15px 0 rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.body_tx_img{
+    width: 100%;
+    height: auto;
+}
+
+/*主要内容*/
+.body_c{
+    width:1910px;
+    height:850px;
+    z-index: 1;
+}
+
+.body_bgl{
+    width: 355px;
+    height: 850px;
+    float: left;
+    text-align: center;
+}
+
+/*.body_bgl_img{
+    width: 250px;
+    height: 395px;
+    padding-top: 455px;
+}*/
+
+.body_bgr{
+    width:355px;
+    height:850px;
+    float:left;
+}
+
+.body_bgr_img{
+    width:355px;
+    height:500px; 
+}
+
+.body_bgc{
+    width:1200px;
+    height:850px;
+    float:left;
+}
+
+.body_bgc1{
+    width:1200px;
+    height:56px;
+}
+
+.body_bgc1 a{
+    display:block;
+    height:56px;
+    float:left;
+    font-size: 16px;
+    line-height: 55px;
+    margin-right: 55px;
+}
+
+.body_bgc1 a:hover{
+    color:#31c27c;
+}
+
+.body_bgc2{
+    width: 1200px;
+    height: 40px;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    padding-top: 35px;
+    margin-bottom: 20px;
+}
+
+.body_bgc2_i1{
+    background-image: url("../images/My Music/icons/播放1.png");
+    background-size: cover;
+    width: 19px;
+    height: 19px;
+    vertical-align: -4px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.body_bgc2_i2{
+    background-image: url("../images/My Music/icons/添加.png");
+    background-size: cover;
+    width: 19px;
+    height: 19px;
+    vertical-align: -4px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.body_bgc2_i3{
+    background-image: url("../images/My Music/icons/下载.png");
+    background-size: cover;
+    width: 19px;
+    height: 16px;
+    vertical-align: -3px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.body_bgc2_i4{
+    background-image: url("../images/My Music/icons/批量操作.png");
+    background-size: cover;
+    width: 19px;
+    height: 19px;
+    vertical-align: -4px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.body_bgc2_a1{
+display: block;
+    width: 85px;
+    height: 38px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #31c27c;
+    background-color: #31c27c;
+    font-size: 14px;
+    color: #fff;
+    line-height: 38px;
+    margin-right: 6px;
+    padding: 0 23px;
+}
+
+.body_bgc2_a1:hover{
+    border:1px solid #2daf6d;
+    background-color: #2daf6d;
+}
+
+.body_bgc2_a2{
+    display: block;
+    width: 85px;
+    height: 38px;
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #c9c9c9;
+    font-size: 14px;
+    line-height: 38px;
+    margin-right: 6px;
+    padding: 0 23px;
+}
+
+.body_bgc2_a2:hover{
+    background-color: #ededed;
+}
+
+.body_bgc3{
+    width:1200px;
+    height:550px;
+}
+
+.body_bgc3_title_li1{
+    width: 607px;
+    height: 50px;
+    padding-left: 20px;
+    float:left;
+    font-size: 14px;
+    color:#999;
+    line-height: 50px;
+}
+
+.body_bgc3_title_li2{
+    width:225px;
+    height:50px;
+    padding-left:15px;
+    float:left;
+    font-size: 14px;
+    color:#999;
+    line-height: 50px;
+}
+
+.body_bgc3_title_li3{
+    width: 83px;
+    height: 50px;
+    padding-left: 10px;
+    float: left;
+    font-size: 14px;
+    color:#999;
+    line-height: 50px;
+}
+
+.body_bgc3_songs1{
+    width: 607px;
+    height: 50px;
+    padding-left: 20px;
+    float:left;
+    line-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.body_bgc3_songs1_span1{
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 72%;
+    margin-right: 8px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.body_bgc3_songs_a{
+    color:#000;
+}
+
+.body_bgc3_songs_a:hover{
+    color:#31c27c;
+}
+
+.body_bgc3_songs1_span2{
+    color:#999;
+}
+
+.body_bgc3_songs2{
+    width: 225px;
+    height: 50px;
+    padding-left: 15px;
+    float:left;
+    line-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.body_bgc3_songs2 a:hover{
+    color:#31c27c;
+}
+
+.body_bgc3_songs3{
+    width: 83px;
+    height: 50px;
+    padding-left: 10px;
+    float:left;
+    line-height: 50px;
+    color:#999;
+}
+
+.body_bgc4{
+    width: 1200px;
+    height: 40px;
+    position: relative;
+    top: 60px;
+}
+
+.body_bgc4_a{
+    display: block;
+    width: 175px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    background-color: #31c27c;
+    border-radius: 40px;
+    text-decoration: none;
+    text-align: center;
+    margin:0 auto;
+}
+
+.body_bgc4_a:hover{
+    background-color: #2daf6d;
+}
+/*内容 end*/
+
+/*尾部*/
+#footer{
+    width:1910px;
+    height:200px;
+    position: relative;
+    background-color:#e6eddf;
+}
+
+#footer_d{
+    width:1200px;
+    height:200px;
+    margin:0 auto;
+}
+
+.footer_copyright{
+    width:1200px;
+    height:81px;
+    text-align: center;
+    line-height: 28px;
+    padding: 25px 0;
+}
+
+.footer_copyright p{
+    color:#999;
+    font-size: 14px;
+}
+
+.footer_copyright a{
+    color:#999;
+    font-size: 14px;
+}
+
+.footer_copyright a:hover{
+    color:#31c27c;
+}
+/*尾部 end*/
